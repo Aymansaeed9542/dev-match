@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Development - DevMatch</title>
+    <meta name="description" content="Discover the best frontend development tools, resources, and learning paths." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html" class="active">Frontend</a>
+          <a href="backend.html">Backend</a>
+          <a href="datascience.html">Data Science</a>
+          <a href="devops.html">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html">Game Dev</a>
+          <a href="favorites.html">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html" class="active">Frontend</a>
+      <a href="backend.html">Backend</a>
+      <a href="datascience.html">Data Science</a>
+      <a href="devops.html">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html">Game Dev</a>
+      <a href="favorites.html">Favorites</a>
+    </div>
+
+    <main class="page-transition">
+      <section class="hero">
+        <div class="container">
+          <h1>Frontend Development</h1>
+          <p>Discover the best tools, frameworks, resources, and learning paths for creating amazing user interfaces.</p>
+        </div>
+      </section>
+      
+      <section class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Essential Frontend Tools</h2>
+            <p>The most popular tools used by frontend developers around the world.</p>
+          </div>
+          
+          <div class="tools-grid">
+            <!-- VS Code Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3>VS Code</h3>
+                <button class="favorite-btn" data-tool="VS Code" data-category="frontend">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>A powerful code editor with extensions for almost any language or framework. Perfect for frontend development.</p>
+              <div class="tool-footer">
+                <a href="https://code.visualstudio.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- React Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <button class="favorite-btn" data-tool="React" data-category="frontend">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>A JavaScript library for building user interfaces with components. Maintained by Meta and a community of developers.</p>
+              <div class="tool-footer">
+                <a href="https://reactjs.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Tailwind CSS Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>Tailwind CSS</h3>
+                <button class="favorite-btn" data-tool="Tailwind CSS" data-category="frontend">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>A utility-first CSS framework for rapidly building custom user interfaces without writing custom CSS.</p>
+              <div class="tool-footer">
+                <a href="https://tailwindcss.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Figma Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-figma"></i>
+                </div>
+                <h3>Figma</h3>
+                <button class="favorite-btn" data-tool="Figma" data-category="frontend">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>A collaborative interface design tool that's taking design teams by storm. Create, test, and ship designs in one place.</p>
+              <div class="tool-footer">
+                <a href="https://www.figma.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- TypeScript Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <h3>TypeScript</h3>
+                <button class="favorite-btn" data-tool="TypeScript" data-category="frontend">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>A superset of JavaScript that adds static typing. Helps catch errors early and makes code more maintainable.</p>
+              <div class="tool-footer">
+                <a href="https://www.typescriptlang.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Next.js Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3>Next.js</h3>
+                <button class="favorite-btn" data-tool="Next.js" data-category="frontend">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>A React framework with server-side rendering and static site generation for production-grade applications.</p>
+              <div class="tool-footer">
+                <a href="https://nextjs.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Learning Resources</h2>
+            <p>The best tutorials, courses, and documentation for frontend developers.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <!-- MDN Web Docs -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h3>MDN Web Docs</h3>
+                <button class="favorite-btn" data-tool="MDN Web Docs" data-category="frontend-resource">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>Comprehensive documentation for web technologies including HTML, CSS, and JavaScript.</p>
+              <div class="resource-footer">
+                <a href="https://developer.mozilla.org/en-US/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Frontend Masters -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Frontend Masters</h3>
+                <button class="favorite-btn" data-tool="Frontend Masters" data-category="frontend-resource">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>Advanced courses on frontend frameworks, libraries, and tooling taught by industry experts.</p>
+              <div class="resource-footer">
+                <a href="https://frontendmasters.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- CSS Tricks -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>CSS Tricks</h3>
+                <button class="favorite-btn" data-tool="CSS Tricks" data-category="frontend-resource">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>Tips, tricks, and techniques on using CSS for layout, design, and animations.</p>
+              <div class="resource-footer">
+                <a href="https://css-tricks.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Josh W Comeau -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <h3>Josh W Comeau</h3>
+                <button class="favorite-btn" data-tool="Josh W Comeau" data-category="frontend-resource">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <p>Interactive tutorials and blog posts about modern React, CSS, and frontend development.</p>
+              <div class="resource-footer">
+                <a href="https://www.joshwcomeau.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="roadmap-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Frontend Development Roadmap</h2>
+            <p>A step-by-step guide to becoming a modern frontend developer.</p>
+          </div>
+          
+          <div class="roadmap-container">
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>HTML, CSS, JavaScript Fundamentals</h3>
+                <p>Master the basics of web development, including semantic HTML, CSS layout techniques, and JavaScript core concepts.</p>
+                <div class="step-resources">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="resource-link">HTML</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="resource-link">CSS</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="resource-link">JavaScript</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>CSS Frameworks & Tools</h3>
+                <p>Learn responsive design principles and popular CSS frameworks like Tailwind CSS to build modern UI layouts.</p>
+                <div class="step-resources">
+                  <a href="https://tailwindcss.com/" class="resource-link">Tailwind CSS</a>
+                  <a href="https://sass-lang.com/" class="resource-link">Sass</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>JavaScript Frameworks</h3>
+                <p>Learn a modern JavaScript framework like React, Vue, or Angular to build interactive user interfaces.</p>
+                <div class="step-resources">
+                  <a href="https://reactjs.org/" class="resource-link">React</a>
+                  <a href="https://vuejs.org/" class="resource-link">Vue</a>
+                  <a href="https://angular.io/" class="resource-link">Angular</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>State Management</h3>
+                <p>Master state management patterns and tools to handle complex application state.</p>
+                <div class="step-resources">
+                  <a href="https://redux.js.org/" class="resource-link">Redux</a>
+                  <a href="https://zustand-demo.pmnd.rs/" class="resource-link">Zustand</a>
+                  <a href="https://tanstack.com/query/latest/" class="resource-link">React Query</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="roadmap-step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>TypeScript</h3>
+                <p>Add type safety to your JavaScript code to improve code quality and developer experience.</p>
+                <div class="step-resources">
+                  <a href="https://www.typescriptlang.org/" class="resource-link">TypeScript</a>
+                  <a href="https://www.typescriptlang.org/docs/handbook/intro.html" class="resource-link">TS Handbook</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 6 -->
+            <div class="roadmap-step">
+              <div class="step-number">6</div>
+              <div class="step-content">
+                <h3>Testing & Performance</h3>
+                <p>Learn how to test your frontend applications and optimize them for the best user experience.</p>
+                <div class="step-resources">
+                  <a href="https://jestjs.io/" class="resource-link">Jest</a>
+                  <a href="https://testing-library.com/" class="resource-link">Testing Library</a>
+                  <a href="https://developer.chrome.com/docs/lighthouse/" class="resource-link">Lighthouse</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+            <a href="ai-ml.html">AI & ML</a>
+            <a href="mobile.html">Mobile</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+  </body>
+</html>

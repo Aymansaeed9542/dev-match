@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps - DevMatch</title>
+    <meta name="description" content="Discover the best DevOps tools, resources, and learning paths." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html">Frontend</a>
+          <a href="backend.html">Backend</a>
+          <a href="datascience.html">Data Science</a>
+          <a href="devops.html" class="active">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html">Game Dev</a>
+          <a href="favorites.html">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html">Frontend</a>
+      <a href="backend.html">Backend</a>
+      <a href="datascience.html">Data Science</a>
+      <a href="devops.html" class="active">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html">Game Dev</a>
+      <a href="favorites.html">Favorites</a>
+    </div>
+
+    <main class="page-transition">
+      <section class="hero">
+        <div class="container">
+          <h1>DevOps</h1>
+          <p>Discover the best tools, practices, and resources for continuous integration, deployment, and infrastructure automation.</p>
+        </div>
+      </section>
+      
+      <section class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Essential DevOps Tools</h2>
+            <p>The most popular tools used by DevOps engineers around the world.</p>
+          </div>
+          
+          <div class="tools-grid">
+            <!-- Docker Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <h3>Docker</h3>
+                <button class="favorite-btn" data-tool="Docker" data-category="devops">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A platform for developing, shipping, and running applications in containers.</p>
+              <div class="tool-footer">
+                <a href="https://www.docker.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Kubernetes Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-cubes"></i>
+                </div>
+                <h3>Kubernetes</h3>
+                <button class="favorite-btn" data-tool="Kubernetes" data-category="devops">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An open-source container orchestration platform for automating deployment, scaling, and management of containerized applications.</p>
+              <div class="tool-footer">
+                <a href="https://kubernetes.io/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Jenkins Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Jenkins</h3>
+                <button class="favorite-btn" data-tool="Jenkins" data-category="devops">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An open-source automation server that helps automate the parts of software development related to building, testing, and deploying.</p>
+              <div class="tool-footer">
+                <a href="https://www.jenkins.io/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Terraform Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Terraform</h3>
+                <button class="favorite-btn" data-tool="Terraform" data-category="devops">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An infrastructure as code tool used to build, change, and version infrastructure safely and efficiently.</p>
+              <div class="tool-footer">
+                <a href="https://www.terraform.io/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Ansible Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3>Ansible</h3>
+                <button class="favorite-btn" data-tool="Ansible" data-category="devops">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An open-source automation platform for configuration management, application deployment, and task automation.</p>
+              <div class="tool-footer">
+                <a href="https://www.ansible.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Prometheus Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Prometheus</h3>
+                <button class="favorite-btn" data-tool="Prometheus" data-category="devops">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An open-source monitoring and alerting toolkit designed for reliability and scalability.</p>
+              <div class="tool-footer">
+                <a href="https://prometheus.io/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Learning Resources</h2>
+            <p>The best tutorials, courses, and documentation for DevOps engineers.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <!-- DevOps Institute -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>DevOps Institute</h3>
+                <button class="favorite-btn" data-tool="DevOps Institute" data-category="devops-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Professional development and certification programs for DevOps practitioners.</p>
+              <div class="resource-footer">
+                <a href="https://www.devopsinstitute.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- KodeKloud -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>KodeKloud</h3>
+                <button class="favorite-btn" data-tool="KodeKloud" data-category="devops-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Hands-on training platform for DevOps tools and technologies.</p>
+              <div class="resource-footer">
+                <a href="https://kodekloud.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- DevOps Roadmap -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-map"></i>
+                </div>
+                <h3>DevOps Roadmap</h3>
+                <button class="favorite-btn" data-tool="DevOps Roadmap" data-category="devops-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Comprehensive guide to becoming a DevOps engineer, covering all essential skills and tools.</p>
+              <div class="resource-footer">
+                <a href="https://roadmap.sh/devops" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="roadmap-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>DevOps Learning Path</h2>
+            <p>A step-by-step guide to becoming a DevOps engineer.</p>
+          </div>
+          
+          <div class="roadmap-container">
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Linux & Networking</h3>
+                <p>Master Linux fundamentals, shell scripting, and networking concepts.</p>
+                <div class="step-resources">
+                  <a href="https://www.linux.org/" class="resource-link">Linux</a>
+                  <a href="https://www.netacad.com/" class="resource-link">Cisco Networking</a>
+                  <a href="https://www.bash.academy/" class="resource-link">Bash Scripting</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Containerization & Orchestration</h3>
+                <p>Learn Docker, Kubernetes, and container orchestration concepts.</p>
+                <div class="step-resources">
+                  <a href="https://www.docker.com/" class="resource-link">Docker</a>
+                  <a href="https://kubernetes.io/" class="resource-link">Kubernetes</a>
+                  <a href="https://helm.sh/" class="resource-link">Helm</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>CI/CD & Infrastructure as Code</h3>
+                <p>Master continuous integration/deployment and infrastructure automation tools.</p>
+                <div class="step-resources">
+                  <a href="https://www.jenkins.io/" class="resource-link">Jenkins</a>
+                  <a href="https://www.terraform.io/" class="resource-link">Terraform</a>
+                  <a href="https://www.ansible.com/" class="resource-link">Ansible</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Monitoring & Observability</h3>
+                <p>Learn about system monitoring, logging, and observability tools.</p>
+                <div class="step-resources">
+                  <a href="https://prometheus.io/" class="resource-link">Prometheus</a>
+                  <a href="https://grafana.com/" class="resource-link">Grafana</a>
+                  <a href="https://www.elastic.co/" class="resource-link">ELK Stack</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+            <a href="ai-ml.html">AI & ML</a>
+            <a href="mobile.html">Mobile</a>
+            <a href="ux-ui.html">UI/UX</a>
+            <a href="game-dev.html">Game Dev</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../js/main.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+  </body>
+</html>

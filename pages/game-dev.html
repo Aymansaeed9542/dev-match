@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Development - DevMatch</title>
+    <meta name="description" content="Find the best game development tools, engines, and learning resources." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html">Frontend</a>
+          <a href="backend.html">Backend</a>
+          <a href="datascience.html">Data Science</a>
+          <a href="devops.html">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html" class="active">Game Dev</a>
+          <a href="favorites.html">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html">Frontend</a>
+      <a href="backend.html">Backend</a>
+      <a href="datascience.html">Data Science</a>
+      <a href="devops.html">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html" class="active">Game Dev</a>
+      <a href="favorites.html">Favorites</a>
+    </div>
+
+    <main class="page-transition game-dev-page">
+      <section class="hero">
+        <div class="container">
+          <h1>Game Development Tools</h1>
+          <p>Discover the best game engines, frameworks, and resources for creating amazing games.</p>
+        </div>
+      </section>
+      
+      <section class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Essential Game Development Tools</h2>
+            <p>The most popular tools used by game developers around the world.</p>
+          </div>
+          
+          <div class="tools-grid">
+            <!-- Unity -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Unity</h3>
+                <button class="favorite-btn" data-tool="Unity" data-category="game-dev">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A powerful cross-platform game engine used to create both 2D and 3D games with C# programming.</p>
+              <div class="tool-footer">
+                <a href="https://unity.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Unreal Engine -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-dice"></i>
+                </div>
+                <h3>Unreal Engine</h3>
+                <button class="favorite-btn" data-tool="Unreal Engine" data-category="game-dev">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A powerful 3D game engine with advanced graphics capabilities and C++ programming support.</p>
+              <div class="tool-footer">
+                <a href="https://www.unrealengine.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Godot -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3>Godot</h3>
+                <button class="favorite-btn" data-tool="Godot" data-category="game-dev">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Free and open source game engine with support for both 2D and 3D game development.</p>
+              <div class="tool-footer">
+                <a href="https://godotengine.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Blender -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Blender</h3>
+                <button class="favorite-btn" data-tool="Blender" data-category="game-dev">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Free and open source 3D creation suite for modeling, animation, and game asset creation.</p>
+              <div class="tool-footer">
+                <a href="https://www.blender.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Learning Resources</h2>
+            <p>Discover top courses, books, and tutorials for learning game development.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <!-- Unity Learn -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Unity Learn</h3>
+                <button class="favorite-btn" data-tool="Unity Learn" data-category="game-dev-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Official Unity learning platform with courses, tutorials, and projects for all skill levels.</p>
+              <div class="resource-footer">
+                <a href="https://learn.unity.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Unreal Learning -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h3>Unreal Engine Docs</h3>
+                <button class="favorite-btn" data-tool="Unreal Learning" data-category="game-dev-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Official Unreal Engine learning platform with courses, documentation, and community resources.</p>
+              <div class="resource-footer">
+                <a href="https://docs.unrealengine.com" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="roadmap-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Game Development Learning Path</h2>
+            <p>A step-by-step guide to becoming a game developer.</p>
+          </div>
+          
+          <div class="roadmap-container">
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Choose a Game Engine</h3>
+                <p>Start with a beginner-friendly game engine like Unity or Godot. Learn the basics of the engine's interface and workflow.</p>
+                <div class="step-resources">
+                  <a href="https://unity.com/" class="resource-link">Unity</a>
+                  <a href="https://godotengine.org/" class="resource-link">Godot</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Learn Programming</h3>
+                <p>Master the programming language used by your chosen engine (C# for Unity, GDScript/C# for Godot, C++ for Unreal).</p>
+                <div class="step-resources">
+                  <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" class="resource-link">C#</a>
+                  <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html" class="resource-link">GDScript</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Game Design Fundamentals</h3>
+                <p>Learn game design principles, mechanics, and level design. Understand player psychology and engagement.</p>
+                <div class="step-resources">
+                  <a href="https://www.gamasutra.com/" class="resource-link">Gamasutra</a>
+                  <a href="https://www.gamedev.net/" class="resource-link">GameDev.net</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>3D Modeling & Animation</h3>
+                <p>Learn 3D modeling and animation using tools like Blender. Create game assets and characters.</p>
+                <div class="step-resources">
+                  <a href="https://www.blender.org/" class="resource-link">Blender</a>
+                  <a href="https://www.blenderguru.com/" class="resource-link">Blender Guru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+            <a href="ai-ml.html">AI & ML</a>
+            <a href="mobile.html">Mobile</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+  </body>
+</html>

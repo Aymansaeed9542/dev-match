@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites - DevMatch</title>
+    <meta name="description" content="View and manage your favorite development tools and resources." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html">Frontend</a>
+          <a href="backend.html">Backend</a>
+          <a href="datascience.html">Data Science</a>
+          <a href="devops.html">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html">Game Dev</a>
+          <a href="favorites.html" class="active">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html">Frontend</a>
+      <a href="backend.html">Backend</a>
+      <a href="datascience.html">Data Science</a>
+      <a href="devops.html">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html">Game Dev</a>
+      <a href="favorites.html" class="active">Favorites</a>
+    </div>
+
+    <main class="page-transition">
+      <section class="hero">
+        <div class="container">
+          <h1>Your Favorites</h1>
+          <p>View and manage your favorite development tools and resources.</p>
+        </div>
+      </section>
+      
+      <section class="favorites-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Saved Tools & Resources</h2>
+            <p>Your personalized collection of development tools and learning resources.</p>
+          </div>
+          
+          <div class="favorites-grid" id="favorites-grid">
+            <!-- Favorites will be dynamically populated here -->
+          </div>
+          
+          <div class="no-favorites hidden" id="no-favorites">
+            <div class="empty-state">
+              <div class="empty-state-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>No Favorites Yet</h3>
+              <p>Start adding your favorite tools and resources to see them here.</p>
+              <a href="../index.html" class="btn">Browse Tools</a>
+            </div>
+          </div>
+
+          <div class="favorites-controls">
+            <button id="clear-favorites" class="btn btn-outline">Clear All Favorites</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../js/main.js" defer></script>
+    <script src="../js/favorites.js" defer></script>
+  </body>
+</html>

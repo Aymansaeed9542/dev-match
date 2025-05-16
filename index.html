@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head section with meta tags and stylesheets -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevMatch - Find developer tools and resources</title>
+    <meta name="description" content="Find the right tools, resources, websites, and roadmaps for your developer journey." />
+    <meta name="author" content="DevMatch" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+  </head>
+
+  <body>
+    <!-- Animated background stars container -->
+    <div class="stars-container" id="stars-container"></div>
+    
+    <!-- Main navigation header -->
+    <header class="navbar">
+      <div class="container navbar-container">
+        <!-- Logo section -->
+        <div class="logo">
+          <a href="index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <!-- Desktop navigation links -->
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="pages/frontend.html">Frontend</a>
+          <a href="pages/backend.html">Backend</a>
+          <a href="pages/datascience.html">Data Science</a>
+          <a href="pages/devops.html">DevOps</a>
+          <a href="pages/ai-ml.html">AI & ML</a>
+          <a href="pages/mobile.html">Mobile</a>
+          <a href="pages/ux-ui.html">UI/UX</a>
+          <a href="pages/game-dev.html">Game Dev</a>
+          <a href="pages/favorites.html">Favorites</a>
+        </nav>
+        <!-- Right side navigation controls -->
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Mobile navigation menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/frontend.html">Frontend</a>
+      <a href="pages/backend.html">Backend</a>
+      <a href="pages/datascience.html">Data Science</a>
+      <a href="pages/devops.html">DevOps</a>
+      <a href="pages/ai-ml.html">AI & ML</a>
+      <a href="pages/mobile.html">Mobile</a>
+      <a href="pages/ux-ui.html">UI/UX</a>
+      <a href="pages/game-dev.html">Game Dev</a>
+      <a href="pages/favorites.html">Favorites</a>
+    </div>
+
+    <main>
+      <!-- Hero section with main heading -->
+      <section class="hero">
+        <div class="container">
+          <h1>Find the right tools for your developer journey</h1>
+          <p>Discover the best tools, resources, websites, and roadmaps based on your area of interest.</p>
+        </div>
+      </section>
+
+      <!-- Specializations grid section -->
+      <section class="specializations">
+        <div class="container">
+          <h2>Choose your specialization</h2>
+          <div class="specialization-grid">
+            <!-- Frontend Development Card -->
+            <a href="pages/frontend.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Frontend Development</h3>
+              <p>Tools and resources for building amazing user interfaces</p>
+            </a>
+            <!-- Backend Development Card -->
+            <a href="pages/backend.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Backend Development</h3>
+              <p>Frameworks, databases and server-side technologies</p>
+            </a>
+            <!-- Data Science Card -->
+            <a href="pages/datascience.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Data Science</h3>
+              <p>Tools for data analysis, visualization and machine learning</p>
+            </a>
+            <!-- DevOps Card -->
+            <a href="pages/devops.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>DevOps</h3>
+              <p>CI/CD, containerization, and infrastructure as code</p>
+            </a>
+            <!-- AI & ML Card -->
+            <a href="pages/ai-ml.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>AI & Machine Learning</h3>
+              <p>Libraries, platforms and learning resources for AI development</p>
+            </a>
+            <!-- Mobile Development Card -->
+            <a href="pages/mobile.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Mobile Development</h3>
+              <p>Frameworks and tools for building native and cross-platform apps</p>
+            </a>
+            <!-- UI/UX Design Card -->
+            <a href="pages/ux-ui.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>Design tools, prototyping applications and resources</p>
+            </a>
+            <!-- Game Development Card -->
+            <a href="pages/game-dev.html" class="specialization-card">
+              <div class="card-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <h3>Game Development</h3>
+              <p>Engines, frameworks and resources for game creators</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Random Tool Discovery section -->
+      <section class="random-tool">
+        <div class="container">
+          <h2>Discover something new</h2>
+          <p>Not sure where to start? Let us suggest a random tool for you.</p>
+          <button id="random-tool-btn" class="btn btn-primary">Suggest Random Tool</button>
+          <div id="random-tool-result" class="random-tool-result hidden">
+            <div class="tool-card">
+              <h3 id="random-tool-name">Tool Name</h3>
+              <p id="random-tool-description">Description will appear here.</p>
+              <div class="tool-links">
+                <a id="random-tool-link" href="#" target="_blank" class="btn btn-small">Visit Website</a>
+                <button id="save-random-tool" class="btn btn-small btn-outline">Save to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer logo and description -->
+          <div class="footer-logo">
+            <a href="index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <!-- Footer category links -->
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="pages/frontend.html">Frontend</a>
+            <a href="pages/backend.html">Backend</a>
+            <a href="pages/datascience.html">Data Science</a>
+            <a href="pages/devops.html">DevOps</a>
+            <a href="pages/ai-ml.html">AI & ML</a>
+            <a href="pages/mobile.html">Mobile</a>
+            <a href="pages/ux-ui.html">UI/UX</a>
+            <a href="pages/game-dev.html">Game Dev</a>
+          </div>
+          <!-- Footer utility links -->
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="pages/favorites.html">Favorites</a>
+            <a href="pages/about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- JavaScript files -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

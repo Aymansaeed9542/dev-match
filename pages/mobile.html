@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Development - DevMatch</title>
+    <meta name="description" content="Discover the best mobile development tools, resources, and learning paths." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html">Frontend</a>
+          <a href="backend.html">Backend</a>
+          <a href="datascience.html">Data Science</a>
+          <a href="devops.html">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html" class="active">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html">Game Dev</a>
+          <a href="favorites.html">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html">Frontend</a>
+      <a href="backend.html">Backend</a>
+      <a href="datascience.html">Data Science</a>
+      <a href="devops.html">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html" class="active">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html">Game Dev</a>
+      <a href="favorites.html">Favorites</a>
+    </div>
+
+    <main class="page-transition">
+      <section class="hero">
+        <div class="container">
+          <h1>Mobile Development</h1>
+          <p>Discover the best tools, frameworks, and resources for mobile app development.</p>
+        </div>
+      </section>
+      
+      <section class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Essential Mobile Development Tools</h2>
+            <p>The most popular tools used by mobile developers around the world.</p>
+          </div>
+          
+          <div class="tools-grid">
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3>React Native</h3>
+              <p>Framework for building native apps using React and JavaScript.</p>
+              <a href="https://reactnative.dev" target="_blank" class="btn">Learn More</a>
+            </div>
+            
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="fab fa-android"></i>
+              </div>
+              <h3>Android Studio</h3>
+              <p>Official IDE for Android app development.</p>
+              <a href="https://developer.android.com/studio" target="_blank" class="btn">Learn More</a>
+            </div>
+            
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="fab fa-apple"></i>
+              </div>
+              <h3>Xcode</h3>
+              <p>IDE for iOS, macOS, watchOS, and tvOS app development.</p>
+              <a href="https://developer.apple.com/xcode" target="_blank" class="btn">Learn More</a>
+            </div>
+            
+            <div class="tool-card">
+              <div class="tool-icon">
+                <i class="fab fa-flutter"></i>
+              </div>
+              <h3>Flutter</h3>
+              <p>UI toolkit for building natively compiled applications.</p>
+              <a href="https://flutter.dev" target="_blank" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Learning Resources</h2>
+            <p>Best tutorials, courses, and documentation for mobile developers.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Udacity</h3>
+              <p>Comprehensive mobile development courses and nanodegrees.</p>
+              <a href="https://www.udacity.com" target="_blank" class="btn">Visit Resource</a>
+            </div>
+            
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <h3>Ray Wenderlich</h3>
+              <p>High-quality tutorials and books for iOS and Android development.</p>
+              <a href="https://www.raywenderlich.com" target="_blank" class="btn">Visit Resource</a>
+            </div>
+            
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-video"></i>
+              </div>
+              <h3>Stanford CS193p</h3>
+              <p>Developing iOS Apps with Swift course materials.</p>
+              <a href="https://cs193p.sites.stanford.edu" target="_blank" class="btn">Visit Resource</a>
+            </div>
+            
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Android Developers</h3>
+              <p>Official documentation and guides for Android development.</p>
+              <a href="https://developer.android.com" target="_blank" class="btn">Visit Resource</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="roadmap-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Mobile Development Learning Path</h2>
+            <p>A step-by-step guide to becoming a mobile developer.</p>
+          </div>
+          
+          <div class="roadmap-container">
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Choose a Platform</h3>
+                <p>Decide whether to focus on iOS, Android, or cross-platform development. Consider your target audience and goals.</p>
+                <div class="step-resources">
+                  <a href="https://developer.apple.com/" class="resource-link">iOS Development</a>
+                  <a href="https://developer.android.com/" class="resource-link">Android Development</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Learn the Basics</h3>
+                <p>Master the fundamentals of mobile development, including UI/UX principles, app architecture, and platform-specific guidelines.</p>
+                <div class="step-resources">
+                  <a href="https://developer.apple.com/design/" class="resource-link">iOS Design Guidelines</a>
+                  <a href="https://developer.android.com/design" class="resource-link">Material Design</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Choose a Framework</h3>
+                <p>Select a development framework based on your needs: native (Swift/Kotlin) or cross-platform (React Native/Flutter).</p>
+                <div class="step-resources">
+                  <a href="https://reactnative.dev/" class="resource-link">React Native</a>
+                  <a href="https://flutter.dev/" class="resource-link">Flutter</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Advanced Topics</h3>
+                <p>Learn about advanced mobile development topics like state management, testing, performance optimization, and app deployment.</p>
+                <div class="step-resources">
+                  <a href="https://developer.apple.com/app-store/" class="resource-link">App Store</a>
+                  <a href="https://play.google.com/console/about/" class="resource-link">Google Play Console</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+            <a href="ai-ml.html">AI & ML</a>
+            <a href="mobile.html">Mobile</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+  </body>
+</html>

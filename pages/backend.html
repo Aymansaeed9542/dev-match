@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backend Development - DevMatch</title>
+    <meta name="description" content="Discover the best backend development tools, resources, and learning paths." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html">Frontend</a>
+          <a href="backend.html" class="active">Backend</a>
+          <a href="datascience.html">Data Science</a>
+          <a href="devops.html">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html">Game Dev</a>
+          <a href="favorites.html">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html">Frontend</a>
+      <a href="backend.html" class="active">Backend</a>
+      <a href="datascience.html">Data Science</a>
+      <a href="devops.html">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html">Game Dev</a>
+      <a href="favorites.html">Favorites</a>
+    </div>
+
+    <main class="page-transition">
+      <section class="hero">
+        <div class="container">
+          <h1>Backend Development</h1>
+          <p>Discover the best tools, frameworks, resources, and learning paths for building robust server-side applications.</p>
+        </div>
+      </section>
+      
+      <section class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Essential Backend Tools</h2>
+            <p>The most popular tools used by backend developers around the world.</p>
+          </div>
+          
+          <div class="tools-grid">
+            <!-- Node.js Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <h3>Node.js</h3>
+                <button class="favorite-btn" data-tool="Node.js" data-category="backend">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A JavaScript runtime built on Chrome's V8 JavaScript engine. Perfect for building scalable network applications.</p>
+              <div class="tool-footer">
+                <a href="https://nodejs.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Express.js Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3>Express.js</h3>
+                <button class="favorite-btn" data-tool="Express.js" data-category="backend">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
+              <div class="tool-footer">
+                <a href="https://expressjs.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- MongoDB Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>MongoDB</h3>
+                <button class="favorite-btn" data-tool="MongoDB" data-category="backend">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A popular NoSQL database that stores data in flexible, JSON-like documents.</p>
+              <div class="tool-footer">
+                <a href="https://www.mongodb.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- PostgreSQL Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>PostgreSQL</h3>
+                <button class="favorite-btn" data-tool="PostgreSQL" data-category="backend">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A powerful, open source object-relational database system with over 30 years of active development.</p>
+              <div class="tool-footer">
+                <a href="https://www.postgresql.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Docker Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <h3>Docker</h3>
+                <button class="favorite-btn" data-tool="Docker" data-category="backend">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A platform for developing, shipping, and running applications in containers.</p>
+              <div class="tool-footer">
+                <a href="https://www.docker.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Redis Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-memory"></i>
+                </div>
+                <h3>Redis</h3>
+                <button class="favorite-btn" data-tool="Redis" data-category="backend">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An in-memory data structure store, used as a database, cache, message broker, and queue.</p>
+              <div class="tool-footer">
+                <a href="https://redis.io/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Learning Resources</h2>
+            <p>The best tutorials, courses, and documentation for backend developers.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <!-- Node.js Documentation -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h3>Node.js Doc</h3>
+                <button class="favorite-btn" data-tool="Node.js Documentation" data-category="backend-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Official documentation for Node.js, including API references and guides.</p>
+              <div class="resource-footer">
+                <a href="https://nodejs.org/docs/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- MongoDB University -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>MongoDB University</h3>
+                <button class="favorite-btn" data-tool="MongoDB University" data-category="backend-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Free online courses on MongoDB and database design.</p>
+              <div class="resource-footer">
+                <a href="https://university.mongodb.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Express.js Guide -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h3>Express.js Guide</h3>
+                <button class="favorite-btn" data-tool="Express.js Guide" data-category="backend-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Official guide to Express.js, covering everything from basic routing to advanced topics.</p>
+              <div class="resource-footer">
+                <a href="https://expressjs.com/en/guide/routing.html" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="roadmap-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Backend Development Learning Path</h2>
+            <p>A step-by-step guide to becoming a backend developer.</p>
+          </div>
+          
+          <div class="roadmap-container">
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Programming Fundamentals</h3>
+                <p>Master core programming concepts and choose a primary language (Python, Node.js, Java, etc.).</p>
+                <div class="step-resources">
+                  <a href="https://www.python.org/" class="resource-link">Python</a>
+                  <a href="https://nodejs.org/" class="resource-link">Node.js</a>
+                  <a href="https://www.java.com/" class="resource-link">Java</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Databases & Data Modeling</h3>
+                <p>Learn SQL and NoSQL databases, data modeling, and database design principles.</p>
+                <div class="step-resources">
+                  <a href="https://www.postgresql.org/" class="resource-link">PostgreSQL</a>
+                  <a href="https://www.mongodb.com/" class="resource-link">MongoDB</a>
+                  <a href="https://redis.io/" class="resource-link">Redis</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>API Development</h3>
+                <p>Master RESTful API design, GraphQL, and API documentation.</p>
+                <div class="step-resources">
+                  <a href="https://swagger.io/" class="resource-link">Swagger</a>
+                  <a href="https://graphql.org/" class="resource-link">GraphQL</a>
+                  <a href="https://www.postman.com/" class="resource-link">Postman</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Authentication & Security</h3>
+                <p>Learn about authentication, authorization, and security best practices.</p>
+                <div class="step-resources">
+                  <a href="https://jwt.io/" class="resource-link">JWT</a>
+                  <a href="https://oauth.net/" class="resource-link">OAuth</a>
+                  <a href="https://owasp.org/" class="resource-link">OWASP</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+            <a href="ai-ml.html">AI & ML</a>
+            <a href="mobile.html">Mobile</a>
+            <a href="ux-ui.html">UI/UX</a>
+            <a href="game-dev.html">Game Dev</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../js/main.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+  </body>
+</html>

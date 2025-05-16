@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science - DevMatch</title>
+    <meta name="description" content="Discover the best data science tools, resources, and learning paths." />
+    <meta name="author" content="DevMatch" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+  </head>
+
+  <body>
+    <div class="stars-container" id="stars-container"></div>
+    
+    <header class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="../index.html">
+            <div class="logo-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="logo-text">DevMatch</span>
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="frontend.html">Frontend</a>
+          <a href="backend.html">Backend</a>
+          <a href="datascience.html" class="active">Data Science</a>
+          <a href="devops.html">DevOps</a>
+          <a href="ai-ml.html">AI & ML</a>
+          <a href="mobile.html">Mobile</a>
+          <a href="ux-ui.html">UI/UX</a>
+          <a href="game-dev.html">Game Dev</a>
+          <a href="favorites.html">Favorites</a>
+        </nav>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">Home</a>
+      <a href="frontend.html">Frontend</a>
+      <a href="backend.html">Backend</a>
+      <a href="datascience.html" class="active">Data Science</a>
+      <a href="devops.html">DevOps</a>
+      <a href="ai-ml.html">AI & ML</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="ux-ui.html">UI/UX</a>
+      <a href="game-dev.html">Game Dev</a>
+      <a href="favorites.html">Favorites</a>
+    </div>
+
+    <main class="page-transition">
+      <section class="hero">
+        <div class="container">
+          <h1>Data Science</h1>
+          <p>Discover the best tools, libraries, and resources for data analysis, machine learning, and artificial intelligence.</p>
+        </div>
+      </section>
+      
+      <section class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Essential Data Science Tools</h2>
+            <p>The most popular tools used by data scientists around the world.</p>
+          </div>
+          
+          <div class="tools-grid">
+            <!-- Python Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fab fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <button class="favorite-btn" data-tool="Python" data-category="datascience">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>The most popular programming language for data science, with extensive libraries for data analysis and machine learning.</p>
+              <div class="tool-footer">
+                <a href="https://www.python.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Jupyter Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h3>Jupyter Notebook</h3>
+                <button class="favorite-btn" data-tool="Jupyter Notebook" data-category="datascience">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An open-source web application that allows you to create and share documents containing live code, equations, visualizations, and narrative text.</p>
+              <div class="tool-footer">
+                <a href="https://jupyter.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Pandas Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-table"></i>
+                </div>
+                <h3>Pandas</h3>
+                <button class="favorite-btn" data-tool="Pandas" data-category="datascience">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A fast, powerful, flexible and easy to use open source data analysis and manipulation tool.</p>
+              <div class="tool-footer">
+                <a href="https://pandas.pydata.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- NumPy Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-calculator"></i>
+                </div>
+                <h3>NumPy</h3>
+                <button class="favorite-btn" data-tool="NumPy" data-category="datascience">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>The fundamental package for scientific computing with Python, providing support for large, multi-dimensional arrays and matrices.</p>
+              <div class="tool-footer">
+                <a href="https://numpy.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Scikit-learn Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h3>Scikit-learn</h3>
+                <button class="favorite-btn" data-tool="Scikit-learn" data-category="datascience">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>A machine learning library for Python, featuring various classification, regression and clustering algorithms.</p>
+              <div class="tool-footer">
+                <a href="https://scikit-learn.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- TensorFlow Card -->
+            <div class="tool-card">
+              <div class="tool-header">
+                <div class="tool-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>TensorFlow</h3>
+                <button class="favorite-btn" data-tool="TensorFlow" data-category="datascience">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>An open-source platform for machine learning, featuring a comprehensive ecosystem of tools, libraries, and community resources.</p>
+              <div class="tool-footer">
+                <a href="https://www.tensorflow.org/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Learning Resources</h2>
+            <p>The best tutorials, courses, and documentation for data scientists.</p>
+          </div>
+          
+          <div class="resources-grid">
+            <!-- DataCamp -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>DataCamp</h3>
+                <button class="favorite-btn" data-tool="DataCamp" data-category="datascience-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Interactive learning platform for data science, offering courses in Python, R, SQL, and more.</p>
+              <div class="resource-footer">
+                <a href="https://www.datacamp.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Kaggle -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Kaggle</h3>
+                <button class="favorite-btn" data-tool="Kaggle" data-category="datascience-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Platform for data science competitions, datasets, and learning resources.</p>
+              <div class="resource-footer">
+                <a href="https://www.kaggle.com/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Fast.ai -->
+            <div class="resource-card">
+              <div class="resource-header">
+                <div class="resource-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Fast.ai</h3>
+                <button class="favorite-btn" data-tool="Fast.ai" data-category="datascience-resource">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p>Free courses and software library for deep learning, making it accessible to everyone.</p>
+              <div class="resource-footer">
+                <a href="https://www.fast.ai/" target="_blank" class="btn btn-small">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="roadmap-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Data Science Learning Path</h2>
+            <p>A step-by-step guide to becoming a data scientist.</p>
+          </div>
+          
+          <div class="roadmap-container">
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Python & Data Analysis</h3>
+                <p>Master Python programming and essential data analysis libraries.</p>
+                <div class="step-resources">
+                  <a href="https://www.python.org/" class="resource-link">Python</a>
+                  <a href="https://pandas.pydata.org/" class="resource-link">Pandas</a>
+                  <a href="https://numpy.org/" class="resource-link">NumPy</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Data Visualization & Statistics</h3>
+                <p>Learn data visualization tools and statistical analysis methods.</p>
+                <div class="step-resources">
+                  <a href="https://matplotlib.org/" class="resource-link">Matplotlib</a>
+                  <a href="https://seaborn.pydata.org/" class="resource-link">Seaborn</a>
+                  <a href="https://www.statsmodels.org/" class="resource-link">StatsModels</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Machine Learning</h3>
+                <p>Master machine learning algorithms and frameworks.</p>
+                <div class="step-resources">
+                  <a href="https://scikit-learn.org/" class="resource-link">Scikit-learn</a>
+                  <a href="https://www.tensorflow.org/" class="resource-link">TensorFlow</a>
+                  <a href="https://pytorch.org/" class="resource-link">PyTorch</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Big Data & Cloud Platforms</h3>
+                <p>Learn big data tools and cloud platforms for data science.</p>
+                <div class="step-resources">
+                  <a href="https://spark.apache.org/" class="resource-link">Apache Spark</a>
+                  <a href="https://aws.amazon.com/sagemaker/" class="resource-link">AWS SageMaker</a>
+                  <a href="https://cloud.google.com/ai-platform" class="resource-link">Google AI Platform</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <span class="logo-text">DevMatch</span>
+            </a>
+            <p>Find the right tools, resources, websites, and roadmaps for your developer journey.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="datascience.html">Data Science</a>
+            <a href="devops.html">DevOps</a>
+            <a href="ai-ml.html">AI & ML</a>
+            <a href="mobile.html">Mobile</a>
+            <a href="ux-ui.html">UI/UX</a>
+            <a href="game-dev.html">Game Dev</a>
+          </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+            <a href="#" id="suggest-resource-link">Suggest Resource</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevMatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../js/main.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+
+  </body>
+</html>

@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Force immediate rendering
   document.body.style.opacity = '1';
   document.body.style.visibility = 'visible';
+  
+  // Fade in main content
+  fadeInMainContent();
 });
 
 // Optimize page transitions
@@ -596,3 +599,24 @@ window.addEventListener('load', () => {
   document.body.style.opacity = '1';
   document.body.style.visibility = 'visible';
 });
+
+// Fade in main content on page load
+function fadeInMainContent() {
+  const main = document.querySelector('main');
+  if (main) {
+    main.style.opacity = '0';
+    main.style.transition = 'opacity 0.7s cubic-bezier(0.4,0,0.2,1)';
+    requestAnimationFrame(() => {
+      main.style.opacity = '1';
+    });
+  }
+}
+
+// Add CSS for fade-in effect
+const fadeInStyles = document.createElement('style');
+fadeInStyles.textContent = `
+  main {
+    opacity: 0;
+  }
+`;
+document.head.appendChild(fadeInStyles);

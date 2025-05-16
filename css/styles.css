@@ -550,6 +550,11 @@ footer {
   }
 }
 
+/* Add animation end handler */
+.page-transition {
+  animation-fill-mode: forwards;
+}
+
 /* Responsive styles */
 @media (max-width: 1200px) {
   .nav-links {

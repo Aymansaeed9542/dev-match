@@ -23,10 +23,8 @@ function optimizePageTransitions() {
     // Add transition class
     mainElement.classList.add('page-transition');
     
-    // Remove transition class after a short delay
-    requestAnimationFrame(() => {
-      mainElement.classList.remove('page-transition');
-    });
+    // Let the CSS animation handle the transition
+    // The class will be removed by the CSS animation
   }
 
   // Optimize animations

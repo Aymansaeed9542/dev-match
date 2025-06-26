@@ -244,3 +244,27 @@ window.addEventListener('resize', () => {
     createStars();
   }
 });
+
+// Language switcher for frontend courses/resources
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var enBtn = document.querySelector('.lang-btn[data-lang="en"]');
+    var arBtn = document.querySelector('.lang-btn[data-lang="ar"]');
+    var enList = document.getElementById('resources-en');
+    var arList = document.getElementById('resources-ar');
+    if (enBtn && arBtn && enList && arList) {
+      enBtn.addEventListener('click', function() {
+        enBtn.classList.add('active');
+        arBtn.classList.remove('active');
+        enList.style.display = '';
+        arList.style.display = 'none';
+      });
+      arBtn.addEventListener('click', function() {
+        arBtn.classList.add('active');
+        enBtn.classList.remove('active');
+        enList.style.display = 'none';
+        arList.style.display = '';
+      });
+    }
+  });
+})();

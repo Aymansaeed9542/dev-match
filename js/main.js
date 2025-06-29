@@ -245,26 +245,32 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Language switcher for frontend courses/resources
+// Universal language switcher for courses/resources sections
 (function() {
   document.addEventListener('DOMContentLoaded', function() {
-    var enBtn = document.querySelector('.lang-btn[data-lang="en"]');
-    var arBtn = document.querySelector('.lang-btn[data-lang="ar"]');
-    var enList = document.getElementById('resources-en');
-    var arList = document.getElementById('resources-ar');
-    if (enBtn && arBtn && enList && arList) {
-      enBtn.addEventListener('click', function() {
-        enBtn.classList.add('active');
-        arBtn.classList.remove('active');
-        enList.style.display = '';
-        arList.style.display = 'none';
-      });
-      arBtn.addEventListener('click', function() {
-        arBtn.classList.add('active');
-        enBtn.classList.remove('active');
-        enList.style.display = 'none';
-        arList.style.display = '';
-      });
-    }
+    // For each language switch group on the page
+    document.querySelectorAll('.lang-switch').forEach(function(langSwitch) {
+      var enBtn = langSwitch.querySelector('.lang-btn[data-lang="en"]');
+      var arBtn = langSwitch.querySelector('.lang-btn[data-lang="ar"]');
+      // Find the closest section to scope the resource lists
+      var section = langSwitch.closest('section');
+      if (!section) return;
+      var enList = section.querySelector('[id$="-en"]');
+      var arList = section.querySelector('[id$="-ar"]');
+      if (enBtn && arBtn && enList && arList) {
+        enBtn.addEventListener('click', function() {
+          enBtn.classList.add('active');
+          arBtn.classList.remove('active');
+          enList.style.display = '';
+          arList.style.display = 'none';
+        });
+        arBtn.addEventListener('click', function() {
+          arBtn.classList.add('active');
+          enBtn.classList.remove('active');
+          enList.style.display = 'none';
+          arList.style.display = '';
+        });
+      }
+    });
   });
 })();
